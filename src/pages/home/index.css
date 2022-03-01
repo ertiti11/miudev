@@ -1,0 +1,19 @@
+.App-title{
+    padding-bottom: 223px;
+    font-size:42px;
+    margin: 0;
+} 
+ 
+ ul{
+    text-decoration: none;
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: rgb(112, 163, 102);
+}
+
+ul li a:hover{
+    color: rgb(255, 255, 255);
+}
