@@ -3,7 +3,7 @@ import Gif from "./Gif";
 import getGifs from '../services/getGifs';
 import './ListOfGifs.css'
 import { Link } from "wouter";
-import Home from "../pages/home"
+import Buscador from "./Buscador"
 
 export default function ListOfGifs ({params}) {
     const {keyword} = params
@@ -19,20 +19,33 @@ export default function ListOfGifs ({params}) {
   })
   }, [keyword])
 
-  if (loading) return <img  src="https://loading.io/mod/spinner/bluecat/sample.gif"/>
+  if (loading) return <p>cargando...</p>
   
-    return <div className="gif-div">
+    return (
+      
+      
+    <div className="gif-div">
+      <Buscador />
         <Link className="links" to={"/"} >Home</Link>
+        
+        
         {
         gifs.map(({id, title, url}) =>
+          
             <Gif
                 key={id}
                 title={title} 
                 url={url} 
                 id={id} 
-            />)
+            />
+           
+            )
             }
+
+        
+        
         
           
           </div>
-}
+          
+    )}

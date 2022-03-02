@@ -1,5 +1,5 @@
 .Gif{
-    border: 1px solid #eee;
+    /* border: 1px solid rgba(77, 95, 175, 0.336); */
     border-radius:10px;
     display: flex;
     flex-direction: column;
@@ -9,6 +9,9 @@
     padding: 32px;
     width: 90%;
     height: 450px;
+    background-color: rgba(77, 95, 175, 0.336);
+    margin-top:50px;
+    
 }
 
 .Gif h4 {
